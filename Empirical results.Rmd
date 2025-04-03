@@ -1,0 +1,45 @@
+---
+title: "Untitled"
+author: "Lux"
+date: "2025-04-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Deskriptiva
+
+
+```{r packages}
+#import packages
+library(tidyverse)
+library(readxl)
+library(dplyr)
+library(ggplot2)
+
+
+```
+
+
+```{r data}
+#read in data from excel in root directory
+data <- read_excel("data.xlsx")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
