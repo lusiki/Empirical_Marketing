@@ -376,13 +376,34 @@ display: none;
 ## 2 2. Javno poduzeće                                   6
 ## 3 3. Mješovito poduzeće (država i privatna osoba)     7</code></pre>
 </div>
-<div id="chisq-o-vs-q" class="section level3">
-<h3>Chisq O vs Q</h3>
+<div id="o-deskriptiva" class="section level3">
+<h3>O deskriptiva</h3>
+<pre><code>## # A tibble: 6 × 2
+##   O     count
+##   &lt;fct&gt; &lt;int&gt;
+## 1 1         5
+## 2 2        14
+## 3 3         9
+## 4 5         6
+## 5 6         2
+## 6 8         1</code></pre>
+</div>
+<div id="chisq-o-vs-q-nije-primjerencsqmali-broj-kategorija-8-6-1" class="section level3">
+<h3>Chisq O vs Q (nije primjerencsq;mali broj kategorija 8, 6, 1)</h3>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  data$O and data$M
-## X-squared = 9.2802, df = 10, p-value = 0.5057</code></pre>
+## X-squared = 5.4951, df = 10, p-value = 0.8558</code></pre>
+</div>
+<div id="fisher-o-vs-q-mali-broj-opservacija-u-kategorijama-8-6-1" class="section level3">
+<h3>Fisher O vs Q (mali broj opservacija u kategorijama 8, 6, 1)</h3>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  data$O and data$M
+## p-value = 0.8991
+## alternative hypothesis: two.sided</code></pre>
 </div>
 <div id="chisq-o-vs-r" class="section level3">
 <h3>Chisq O vs R</h3>
@@ -390,7 +411,16 @@ display: none;
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  data$O and data$R
-## X-squared = 38.193, df = 15, p-value = 0.0008449</code></pre>
+## X-squared = 34.467, df = 15, p-value = 0.002926</code></pre>
+</div>
+<div id="fisher-o-vs-r" class="section level3">
+<h3>Fisher O vs R</h3>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  data$O and data$R
+## p-value = 0.001068
+## alternative hypothesis: two.sided</code></pre>
 </div>
 <div id="chisq-o-vs-t" class="section level3">
 <h3>Chisq O vs T</h3>
@@ -398,7 +428,16 @@ display: none;
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  data$O and data$T
-## X-squared = 12.806, df = 15, p-value = 0.6172</code></pre>
+## X-squared = 12.744, df = 15, p-value = 0.6221</code></pre>
+</div>
+<div id="fisher-o-vs-t" class="section level3">
+<h3>Fisher O vs T</h3>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  data$O and data$T
+## p-value = 0.5423
+## alternative hypothesis: two.sided</code></pre>
 </div>
 <div id="s-deskriptiva" class="section level3">
 <h3>S deskriptiva</h3>

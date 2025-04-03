@@ -47,8 +47,16 @@ data %>%
 
 ```
 
+### O deskriptiva
+```{r}
+# group variable P by factor and count
+data %>%
+  mutate(O = as.factor(`O`)) %>%
+  group_by(O) %>%
+  summarise(count = n())
 
-### Chisq O vs Q
+```
+### Chisq O vs Q (nije primjerencsq;mali broj kategorija 8, 6, 1)
 ```{r}
 # Chi-squared test for independence O vs M
 chisq.test(data$O, data$M)
@@ -56,6 +64,15 @@ chisq.test(data$O, data$M)
 
 
 ```
+
+### Fisher O vs Q (mali broj opservacija u kategorijama 8, 6, 1)
+
+```{r}
+# Fisher's exact test for independence O vs M
+fisher.test(data$O, data$M)
+```
+
+
 
 ### Chisq O vs R
 ```{r}
@@ -67,11 +84,30 @@ chisq.test(data$O, data$R)
 ```
 
 
+### Fisher O vs R 
+
+```{r}
+# Fisher's exact test for independence O vs M
+fisher.test(data$O, data$R)
+```
+
+
+
 ### Chisq O vs T
 ```{r}
 # Chi-squared test for independence O vs T
 chisq.test(data$O, data$T)
 ```
+
+
+### Fisher O vs T 
+
+```{r}
+# Fisher's exact test for independence O vs T
+fisher.test(data$O, data$T)
+```
+
+
 
 ### S deskriptiva
 
