@@ -1,12 +1,12 @@
 ---
-title: "Untitled"
+title: "Marketing_empirical"
 author: "Lux"
 date: "2025-04-03"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 ## Deskriptiva
@@ -28,18 +28,59 @@ library(ggplot2)
 data <- read_excel("data.xlsx")
 ```
 
+### P deskriptiva
+```{r}
+# group variable P by factor and count
+data %>%
+  mutate(P = as.factor(P)) %>%
+  group_by(P) %>%
+  summarise(count = n())
+
+```
+### M deskriptiva
+```{r}
+# group variable P by factor and count
+data %>%
+  mutate(M = as.factor(M)) %>%
+  group_by(M) %>%
+  summarise(count = n())
+
+```
+
+
+### Chisq O vs Q
+```{r}
+# Chi-squared test for independence O vs M
+chisq.test(data$O, data$M)
 
 
 
+```
+
+### Chisq O vs R
+```{r}
+# Chi-squared test for independence O vs R
+chisq.test(data$O, data$R)
 
 
 
+```
 
 
+### Chisq O vs T
+```{r}
+# Chi-squared test for independence O vs T
+chisq.test(data$O, data$T)
+```
 
+### S deskriptiva
 
-
-
-
+```{r}
+# group variable S by factor and count
+data %>%
+  mutate(S = as.factor(S)) %>%
+  group_by(S) %>%
+  summarise(count = n())
+```
 
 
