@@ -117,7 +117,7 @@ chisq.test(data$O, data$Q)
 
 ```{r}
 # Fisher's exact test for independence O vs M
-fisher.test(data$O, data$M)
+fisher.test(data$O, data$Q)
 ```
 
 
