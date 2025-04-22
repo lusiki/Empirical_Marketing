@@ -31,9 +31,9 @@ data <- read_excel("data.xlsx")
 
 # filter rows where O = 8 and O = 6
 
-data <- data %>%
-  filter(O != 8 & O != 6) %>%
-  filter(T != 2)
+#data <- data %>%
+#  filter(O != 8 & O != 6) %>%
+#  filter(T != 2)
 
 ```
 
