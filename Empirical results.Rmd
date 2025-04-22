@@ -32,7 +32,8 @@ data <- read_excel("data.xlsx")
 # filter rows where O = 8 and O = 6
 
 data <- data %>%
-  filter(O != 8 & O != 6)
+  filter(O != 8 & O != 6) %>%
+  filter(T != 2)
 
 ```
 
@@ -64,6 +65,14 @@ data %>%
   summarise(count = n())
 
 
+
+# calculate the average of T per group in O
+
+
+data %>%
+  group_by(O) %>%
+  summarise(mean_T = mean(T, na.rm = TRUE)) %>%
+  arrange(desc(mean_T))
 
 
 
