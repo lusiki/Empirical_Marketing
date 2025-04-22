@@ -26,6 +26,14 @@ library(ggplot2)
 ```{r data}
 #read in data from excel in root directory
 data <- read_excel("data.xlsx")
+
+
+
+# filter rows where O = 8 and O = 6
+
+data <- data %>%
+  filter(O != 8 & O != 6)
+
 ```
 
 ### P deskriptiva
@@ -55,11 +63,51 @@ data %>%
   group_by(O) %>%
   summarise(count = n())
 
+
+
+
+
 ```
+
+### Q deskriptiva
+```{r}
+# group variable P by factor and count
+data %>%
+  mutate(Q = as.factor(`Q`)) %>%
+  group_by(Q) %>%
+  summarise(count = n())
+
+
+```
+
+### R deskriptiva
+```{r}
+# group variable P by factor and count
+data %>%
+  mutate(R = as.factor(`R`)) %>%
+  group_by(R) %>%
+  summarise(count = n())
+
+
+```
+
+### T deskriptiva
+```{r}
+# group variable P by factor and count
+data %>%
+  mutate(T = as.factor(`T`)) %>%
+  group_by(T) %>%
+  summarise(count = n())
+
+
+```
+
 ### Chisq O vs Q (nije primjerencsq;mali broj kategorija 8, 6, 1)
 ```{r}
+
+
 # Chi-squared test for independence O vs M
-chisq.test(data$O, data$M)
+chisq.test(data$O, data$Q)
 
 
 

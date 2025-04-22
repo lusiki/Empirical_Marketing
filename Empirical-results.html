@@ -364,37 +364,66 @@ display: none;
 <pre><code>## # A tibble: 2 × 2
 ##   P     count
 ##   &lt;fct&gt; &lt;int&gt;
-## 1 1. DA    21
-## 2 2. NE    16</code></pre>
+## 1 1. DA    20
+## 2 2. NE    14</code></pre>
 </div>
 <div id="m-deskriptiva" class="section level3">
 <h3>M deskriptiva</h3>
 <pre><code>## # A tibble: 3 × 2
 ##   M                                               count
 ##   &lt;fct&gt;                                           &lt;int&gt;
-## 1 1. Privatno poduzeće                               24
-## 2 2. Javno poduzeće                                   6
+## 1 1. Privatno poduzeće                               22
+## 2 2. Javno poduzeće                                   5
 ## 3 3. Mješovito poduzeće (država i privatna osoba)     7</code></pre>
 </div>
 <div id="o-deskriptiva" class="section level3">
 <h3>O deskriptiva</h3>
-<pre><code>## # A tibble: 6 × 2
+<pre><code>## # A tibble: 4 × 2
 ##   O     count
 ##   &lt;fct&gt; &lt;int&gt;
 ## 1 1         5
 ## 2 2        14
 ## 3 3         9
-## 4 5         6
-## 5 6         2
-## 6 8         1</code></pre>
+## 4 5         6</code></pre>
+</div>
+<div id="q-deskriptiva" class="section level3">
+<h3>Q deskriptiva</h3>
+<pre><code>## # A tibble: 5 × 2
+##   Q                                   count
+##   &lt;fct&gt;                               &lt;int&gt;
+## 1 1. Uopće se ne slažem                  16
+## 2 2. Uglavnom se ne slažem                8
+## 3 3. Niti se slažem niti se ne slažem     4
+## 4 4. Uglavnom se slažem                   4
+## 5 5. U potpunosti se slažem               2</code></pre>
+</div>
+<div id="r-deskriptiva" class="section level3">
+<h3>R deskriptiva</h3>
+<pre><code>## # A tibble: 4 × 2
+##   R                                   count
+##   &lt;fct&gt;                               &lt;int&gt;
+## 1 1. Uopće se ne slažem                  23
+## 2 2. Uglavnom se ne slažem                6
+## 3 3. Niti se slažem niti se ne slažem     2
+## 4 4. Uglavnom se slažem                   3</code></pre>
+</div>
+<div id="t-deskriptiva" class="section level3">
+<h3>T deskriptiva</h3>
+<pre><code>## # A tibble: 4 × 2
+##   T     count
+##   &lt;fct&gt; &lt;int&gt;
+## 1 2         1
+## 2 3         8
+## 3 4        10
+## 4 5        15</code></pre>
 </div>
 <div id="chisq-o-vs-q-nije-primjerencsqmali-broj-kategorija-8-6-1" class="section level3">
 <h3>Chisq O vs Q (nije primjerencsq;mali broj kategorija 8, 6, 1)</h3>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
-## data:  data$O and data$M
-## X-squared = 5.4951, df = 10, p-value = 0.8558</code></pre>
+## data:  data$O and data$Q
+## X-squared = 27.935, df = 12, p-value = 0.005654</code></pre>
 </div>
 <div id="fisher-o-vs-q-mali-broj-opservacija-u-kategorijama-8-6-1" class="section level3">
 <h3>Fisher O vs Q (mali broj opservacija u kategorijama 8, 6, 1)</h3>
@@ -402,7 +431,7 @@ display: none;
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
 ## data:  data$O and data$M
-## p-value = 0.8991
+## p-value = 0.8851
 ## alternative hypothesis: two.sided</code></pre>
 </div>
 <div id="chisq-o-vs-r" class="section level3">
@@ -411,7 +440,7 @@ display: none;
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  data$O and data$R
-## X-squared = 34.467, df = 15, p-value = 0.002926</code></pre>
+## X-squared = 21.937, df = 9, p-value = 0.009081</code></pre>
 </div>
 <div id="fisher-o-vs-r" class="section level3">
 <h3>Fisher O vs R</h3>
@@ -419,7 +448,7 @@ display: none;
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
 ## data:  data$O and data$R
-## p-value = 0.001068
+## p-value = 0.002092
 ## alternative hypothesis: two.sided</code></pre>
 </div>
 <div id="chisq-o-vs-t" class="section level3">
@@ -428,7 +457,7 @@ display: none;
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  data$O and data$T
-## X-squared = 12.744, df = 15, p-value = 0.6221</code></pre>
+## X-squared = 8.9021, df = 9, p-value = 0.4464</code></pre>
 </div>
 <div id="fisher-o-vs-t" class="section level3">
 <h3>Fisher O vs T</h3>
@@ -436,7 +465,7 @@ display: none;
 ##  Fisher&#39;s Exact Test for Count Data
 ## 
 ## data:  data$O and data$T
-## p-value = 0.5423
+## p-value = 0.4701
 ## alternative hypothesis: two.sided</code></pre>
 </div>
 <div id="s-deskriptiva" class="section level3">
@@ -445,7 +474,7 @@ display: none;
 ##   S     count
 ##   &lt;fct&gt; &lt;int&gt;
 ## 1 1. DA    20
-## 2 2. NE    17</code></pre>
+## 2 2. NE    14</code></pre>
 </div>
 </div>
 
