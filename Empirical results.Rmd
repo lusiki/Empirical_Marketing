@@ -65,6 +65,16 @@ data %>%
   summarise(count = n())
 
 
+# group variable P by factor and count
+data %>%
+  mutate(P = as.factor(`P`)) %>%
+  group_by(P) %>%
+  summarise(count = n())
+
+
+
+
+
 
 # calculate the average of T per group in O
 
@@ -73,6 +83,21 @@ data %>%
   group_by(O) %>%
   summarise(mean_T = mean(T, na.rm = TRUE)) %>%
   arrange(desc(mean_T))
+
+
+
+
+# group by M and O and count
+
+data %>%
+  group_by(M, O) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count)) %>% View()
+
+
+
+
+
 
 
 
@@ -162,6 +187,14 @@ chisq.test(data$O, data$T)
 ```{r}
 # Fisher's exact test for independence O vs T
 fisher.test(data$O, data$T)
+```
+
+
+### Fisher O vs P 
+
+```{r}
+# Fisher's exact test for independence O vs T
+fisher.test(data$O, data$P)
 ```
 
 

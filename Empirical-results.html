@@ -387,6 +387,11 @@ display: none;
 ## 4 5. Postoji jedan, integrirani odjel u kojem se funkcije marketinga i od…     6
 ## 5 6. Marketinškim i komunikacijskim aktivnostima bavi se drugi odjel unut…     2
 ## 6 8. Ništa od navedenog                                                        1</code></pre>
+<pre><code>## # A tibble: 2 × 2
+##   P     count
+##   &lt;fct&gt; &lt;int&gt;
+## 1 1. DA    21
+## 2 2. NE    16</code></pre>
 <pre><code>## # A tibble: 6 × 2
 ##   O                                                                       mean_T
 ##   &lt;chr&gt;                                                                    &lt;dbl&gt;
@@ -477,6 +482,15 @@ display: none;
 ## 
 ## data:  data$O and data$T
 ## p-value = 0.5661
+## alternative hypothesis: two.sided</code></pre>
+</div>
+<div id="fisher-o-vs-p" class="section level3">
+<h3>Fisher O vs P</h3>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  data$O and data$P
+## p-value = 0.8982
 ## alternative hypothesis: two.sided</code></pre>
 </div>
 <div id="s-deskriptiva" class="section level3">
