@@ -98,7 +98,7 @@ data %>%
 
 ```{r}
 data %>%
-  group_by( O, R) %>%
+  group_by( O, Q) %>%
   summarise(count = n()) %>%
   arrange(desc(count))
 ```
