@@ -112,6 +112,21 @@ data %>%
   arrange(desc(count))
 ```
 
+
+### P za one koji su rekli DA deskriptiva
+
+```{r}
+data %>%
+  filter(P == "1. DA") %>%
+  group_by( O) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+```
+
+
+
+
+
 ### Q deskriptiva
 ```{r}
 # group variable P by factor and count
