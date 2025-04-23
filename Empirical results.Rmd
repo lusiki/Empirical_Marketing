@@ -72,10 +72,6 @@ data %>%
   summarise(count = n())
 
 
-
-
-
-
 # calculate the average of T per group in O
 
 
@@ -92,15 +88,28 @@ data %>%
 data %>%
   group_by(M, O) %>%
   summarise(count = n()) %>%
-  arrange(desc(count)) %>% View()
+  arrange(desc(count)) 
 
 
 
 
+```
+### OQ deskriptiva
+
+```{r}
+data %>%
+  group_by( O, R) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+```
+### OR deskriptiva
 
 
-
-
+```{r}
+data %>%
+  group_by(O, R) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
 ```
 
 ### Q deskriptiva
